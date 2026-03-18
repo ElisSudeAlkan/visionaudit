@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "scanned_files": 5,
+    "issue_count": 3,
+    "errored_files": 1
+  },
+  "files": [
+    {
+      "path": "sample_data\\images\\butterfly_flower.jpg",
+      "file_size_bytes": 297702,
+      "width": 600,
+      "height": 400,
+      "resolution": "600x400",
+      "format": "JPEG",
+      "issues": []
+    },
+    {
+      "path": "sample_data\\images\\city_waterfront.jpg",
+      "file_size_bytes": 64644,
+      "width": 696,
+      "height": 465,
+      "resolution": "696x465",
+      "format": "JPEG",
+      "issues": []
+    },
+    {
+      "path": "sample_data\\images\\corrupt.png",
+      "file_size_bytes": 28,
+      "width": null,
+      "height": null,
+      "resolution": null,
+      "format": null,
+      "issues": [
+        {
+          "code": "corrupt_or_unreadable",
+          "message": "Image could not be opened.",
+          "severity": "error",
+          "details": {
+            "error": "cannot identify image file 'sample_data\\\\images\\\\corrupt.png'"
+          }
+        }
+      ]
+    },
+    {
+      "path": "sample_data\\images\\large_file.png",
+      "file_size_bytes": 390410,
+      "width": 3000,
+      "height": 3000,
+      "resolution": "3000x3000",
+      "format": "PNG",
+      "issues": []
+    },
+    {
+      "path": "sample_data\\images\\tiny.png",
+      "file_size_bytes": 181,
+      "width": 64,
+      "height": 64,
+      "resolution": "64x64",
+      "format": "PNG",
+      "issues": [
+        {
+          "code": "width_too_small",
+          "message": "Image width is below minimum (256px).",
+          "severity": "warning",
+          "details": {
+            "actual_width": 64,
+            "min_width": 256
+          }
+        },
+        {
+          "code": "height_too_small",
+          "message": "Image height is below minimum (256px).",
+          "severity": "warning",
+          "details": {
+            "actual_height": 64,
+            "min_height": 256
+          }
+        }
+      ]
+    }
+  ]
+}
